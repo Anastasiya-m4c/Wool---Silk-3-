@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins&display=swap');
 
 :root {
-    --blue: #4d5775;
-    --backcol: #d9d2c7;
+    --blue: #0461CF;
+    --orange: #cd844f;
+    --backcol: #F1F0E8;
     --pink: #f0acb5;
-    --hover: #ead9da;
+    --hover: #B38C58;
+    --icon: #e9a16b;
+    --text: #183454;
+    --berry: #967084;
+    ;
 }
 
 body {
-    background-color: var(--pink);
+    background-color: var(--backcol);
     font-family: 'Poppins', sans-serif;
-    color: black;
+    color: var(--text);
     display: flex;
     flex-direction: column;
 }
@@ -23,10 +28,10 @@ h1 {
 #navbar * {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: var(--blue);
+    background-color: var(--orange);
     border-bottom-right-radius: .25em;
     border-bottom-left-radius: .25em;
-    color: var(--pink);
+    color: var(--text);
 }
 
 .active {
@@ -61,9 +66,9 @@ mark {
 }
 
 .custom_button {
-    background-color: var(--pink);
+    background-color: var(--orange);
     color: white;
-    border: var(--pink);
+    border: var(--orange);
 }
 
 .custom_button:hover {
@@ -73,12 +78,12 @@ mark {
 
 /*services*/
 #services h2 {
-    color: #f0acb5;
+    color: var(--text);
 }
 
 .card-text {
     min-height: 192px;
-    color: #62605F;
+    color: var(--text);
 }
 
 .card>img {
@@ -86,7 +91,7 @@ mark {
 }
 
 .card-title {
-    color: var(--blue);
+    color: var(--text);
 }
 
 /*booking form*/
@@ -126,7 +131,7 @@ mark {
 
 /*footer*/
 #contact {
-    background-color: #746f8e;
+    background-color: var(--orange);
     color: white;
     border-top-right-radius: .25em;
     border-top-left-radius: .25em;
@@ -141,12 +146,12 @@ mark {
 }
 
 .social-media-links:hover * {
-    color: #9991c0;
+    color: var(--hover);
 }
 
 #contact .table-dark * {
     background-color: transparent;
-    border: #746f8e;
+    border: var(--icon);
 }
 
 .map-link * {
