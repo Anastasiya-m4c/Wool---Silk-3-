@@ -1,15 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins&display=swap');
 
 :root {
-    --blue: #0461CF;
-    --orange: #cd844f;
-    --backcol: #F1F0E8;
-    --pink: #f0acb5;
-    --hover: #B38C58;
-    --icon: #e9a16b;
-    --text: #183454;
-    --berry: #967084;
-    ;
+    --blue: #496fa2;
+    --backcol: #f4f7f4;
+    --hover: #385C8D;
+    --icon: #b04058;
+    --text: #1f1520;
 }
 
 body {
@@ -28,10 +24,10 @@ h1 {
 #navbar * {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: var(--orange);
+    background-color: var(--blue);
     border-bottom-right-radius: .25em;
     border-bottom-left-radius: .25em;
-    color: var(--text);
+    color: var(--backcol);
 }
 
 .active {
@@ -66,9 +62,9 @@ mark {
 }
 
 .custom_button {
-    background-color: var(--orange);
-    color: white;
-    border: var(--orange);
+    background-color: var(--blue);
+    color: var(--backcol);
+    border: var(--blue);
 }
 
 .custom_button:hover {
@@ -82,8 +78,9 @@ mark {
 }
 
 .card-text {
-    min-height: 192px;
+    min-height: 200px;
     color: var(--text);
+    text-align: left;
 }
 
 .card>img {
@@ -108,8 +105,8 @@ mark {
 }
 
 .form-check-input:checked {
-    background-color: #746f8e;
-    border-color: #9991c0;
+    background-color: var(--blue);
+    border-color: var(--hover);
 }
 
 /*success*/
@@ -131,8 +128,8 @@ mark {
 
 /*footer*/
 #contact {
-    background-color: var(--orange);
-    color: white;
+    background-color: var(--blue);
+    color: var(--backcol);
     border-top-right-radius: .25em;
     border-top-left-radius: .25em;
 }
@@ -142,7 +139,7 @@ mark {
     margin-top: 3rem;
     margin-bottom: 3rem;
     padding: 7px;
-    color: #F7F5F5;
+    color: var(--backcol);
 }
 
 .social-media-links:hover * {
@@ -151,16 +148,16 @@ mark {
 
 #contact .table-dark * {
     background-color: transparent;
-    border: var(--icon);
+    border: var(--blue);
 }
 
 .map-link * {
-    color: #F7F5F5;
+    color: var(--backcol);
     font-size: 2rem;
     margin-top: 1rem;
 }
 .map-link:hover * {
-    color: #9991c0;
+    color: var(--hover);
 }
 
 /*media query large scrren*/ 
