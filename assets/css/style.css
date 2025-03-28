@@ -6,6 +6,7 @@
     --hover: #385C8D;
     --icon: #b04058;
     --text: #1f1520;
+    --heading: #284979;
 }
 
 body {
@@ -69,7 +70,7 @@ mark {
 
 .custom_button:hover {
     background-color: var(--hover);
-    color: white
+    color: var(--backcol)
 }
 
 /*services*/
@@ -88,7 +89,8 @@ mark {
 }
 
 .card-title {
-    color: var(--text);
+    color: var(--heading);
+    text-align: left;
 }
 
 /*booking form*/
