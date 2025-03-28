@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins&display=swap');
+
+:root {
+    --blue: #4d5775;
+    --backcol: #d9d2c7;
+    --pink: #f0acb5;
+    --hover: #ead9da;
+}
+
+body {
+    background-color: var(--pink);
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    display: none;
+}
+
+/*navbar*/
+#navbar * {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: var(--blue);
+    border-bottom-right-radius: .25em;
+    border-bottom-left-radius: .25em;
+    color: var(--pink);
+}
+
+.active {
+    text-decoration: underline; 
+}
+
+
+/*hero
+#hero {
+    background: url("/assets/images/mum\ .jpeg") no-repeat center center/cover;
+    position: relative;
+    height: 500px;
+    width: 100%;
+    opacity: 0.7;
+} 
+.salon_name {
+    width: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}*/
+
+.mark,
+mark {
+    color: #49465a;
+    background-color: rgba(213, 202, 202, 0.4);
+}
+
+.header_button {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.custom_button {
+    background-color: var(--pink);
+    color: white;
+    border: var(--pink);
+}
+
+.custom_button:hover {
+    background-color: var(--hover);
+    color: white
+}
+
+/*services*/
+#services h2 {
+    color: #f0acb5;
+}
+
+.card-text {
+    min-height: 192px;
+    color: #62605F;
+}
+
+.card>img {
+    height: 443px;
+}
+
+.card-title {
+    color: var(--blue);
+}
+
+/*booking form*/
+#booking-form {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.form-check {
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 2.5em;
+    margin-bottom: 1.125rem;
+}
+
+.form-check-input:checked {
+    background-color: #746f8e;
+    border-color: #9991c0;
+}
+
+/*success*/
+#success {
+    margin-top: 4rem;
+    margin-bottom: auto;
+    padding-bottom: 60px;
+}
+
+/*gallery*/
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+.hidden {
+    display: none;
+}
+
+/*footer*/
+#contact {
+    background-color: #746f8e;
+    color: white;
+    border-top-right-radius: .25em;
+    border-top-left-radius: .25em;
+}
+
+.social-media-links * {
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 7px;
+    color: #F7F5F5;
+}
+
+.social-media-links:hover * {
+    color: #9991c0;
+}
+
+#contact .table-dark * {
+    background-color: transparent;
+    border: #746f8e;
+}
+
+.map-link * {
+    color: #F7F5F5;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+.map-link:hover * {
+    color: #9991c0;
+}
+
+/*media query large scrren*/ 
+@media screen and (min-width: 768px) {
+    #photos {
+        column-count: 2;
+        gap: 0;
+    }
+}
+
+/*media query med scrren*/
+@media screen and (min-width: 768px) {
+    #photos {
+        column-count: 3;
+    }
+} 
+
+/*media query large scrren*/
+@media screen and (min-width: 1200px) {
+    #photos {
+        column-count: 4;
+    }
+    body {
+        max-width: 1900px;
+        margin: 0 auto; /* Used chat GPT to center the body content horizontally */
+    }
+} 
